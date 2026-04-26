@@ -30,7 +30,7 @@ export function Specialties() {
           <span className="text-primary font-semibold tracking-widest uppercase text-sm font-sans">
             Sabores Únicos
           </span>
-          <h2 className="text-3xl md:text-5xl font-bold text-foreground mt-2 mb-4 text-balance">
+          <h2 className="text-3xl md:text-5xl font-extrabold text-secondary mt-2 mb-4 text-balance">
             Nossas Especialidades
           </h2>
           <div className="w-20 h-1 bg-primary mx-auto mb-6" />
@@ -64,7 +64,7 @@ export function Specialties() {
               
               {/* Content */}
               <div className="p-6">
-                <h3 className="text-lg font-bold text-foreground mb-2">{item.name}</h3>
+                <h3 className="text-lg font-extrabold text-secondary mb-2">{item.name}</h3>
                 <p className="text-foreground/60 text-sm">{item.description}</p>
               </div>
             </div>
@@ -73,7 +73,7 @@ export function Specialties() {
 
         {/* Highlight Box */}
         <div className="mt-16 bg-gradient-to-r from-primary/20 via-primary/10 to-primary/20 rounded-2xl p-8 md:p-12 text-center">
-          <h3 className="text-2xl md:text-3xl font-bold text-foreground mb-4">
+          <h3 className="text-2xl md:text-3xl font-extrabold text-secondary mb-4">
             Tábua Floripa
           </h3>
           <p className="text-foreground max-w-3xl mx-auto mb-8 text-base">

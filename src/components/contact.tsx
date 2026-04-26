@@ -19,7 +19,7 @@ export function Contact() {
           <span className="text-primary font-semibold tracking-widest uppercase text-sm font-sans">
             Visite-nos
           </span>
-          <h2 className="text-3xl md:text-5xl font-bold text-foreground mt-2 mb-4 text-balance">
+          <h2 className="text-3xl md:text-5xl font-extrabold text-secondary mt-2 mb-4 text-balance">
             Localização e Contato
           </h2>
           <div className="w-20 h-1 bg-primary mx-auto" />
@@ -34,7 +34,7 @@ export function Contact() {
                 <MapPin className="text-primary" size={24} />
               </div>
               <div>
-                <h3 className="text-lg font-bold text-foreground mb-2">Endereço</h3>
+                <h3 className="text-lg font-extrabold text-secondary mb-2">Endereço</h3>
                 <p className="text-foreground text-sm">
                   Av. Pedro Zapelini, 1120<br />
                   Santo Antônio de Pádua<br />
@@ -60,7 +60,7 @@ export function Contact() {
                 <Phone className="text-primary" size={24} />
               </div>
               <div>
-                <h3 className="text-lg font-bold text-foreground mb-2">Telefone / WhatsApp</h3>
+                <h3 className="text-lg font-extrabold text-secondary mb-2">Telefone / WhatsApp</h3>
                 <a
                   href="tel:+5548936224040"
                   className="text-foreground hover:text-primary transition-colors text-base"
@@ -89,7 +89,7 @@ export function Contact() {
                 <Instagram className="text-primary" size={24} />
               </div>
               <div>
-                <h3 className="text-lg font-bold text-foreground mb-2">Instagram</h3>
+                <h3 className="text-lg font-extrabold text-secondary mb-2">Instagram</h3>
                 <a
                   href="https://www.instagram.com/floripa.bar"
                   target="_blank"
@@ -107,7 +107,7 @@ export function Contact() {
                 <Clock className="text-primary" size={24} />
               </div>
               <div className="flex-1">
-                <h3 className="text-lg font-bold text-foreground mb-4">Horário de Funcionamento</h3>
+                <h3 className="text-lg font-extrabold text-secondary mb-4">Horário de Funcionamento</h3>
                 <div className="space-y-2">
                   {schedules.map((schedule, index) => (
                     <div 

@@ -87,7 +87,7 @@ export function Menu() {
           <span className="text-primary font-semibold tracking-widest uppercase text-sm font-sans">
             Delícias
           </span>
-          <h2 className="text-3xl md:text-5xl font-bold text-foreground mt-2 mb-4 text-balance">
+          <h2 className="text-3xl md:text-5xl font-extrabold text-secondary mt-2 mb-4 text-balance">
             Nosso Cardápio
           </h2>
           <div className="w-20 h-1 bg-primary mx-auto mb-6" />
@@ -123,12 +123,12 @@ export function Menu() {
             >
               <div className="flex justify-between items-start gap-4">
                 <div className="flex-1">
-                  <h3 className="font-bold text-foreground group-hover:text-primary transition-colors text-base">
+                  <h3 className="font-extrabold text-secondary group-hover:text-primary transition-colors text-base">
                     {item.name}
                   </h3>
                   <p className="text-foreground/60 text-sm mt-1">{item.description}</p>
                 </div>
-                <span className="text-primary font-bold whitespace-nowrap text-base">{item.price}</span>
+                <span className="text-primary font-extrabold whitespace-nowrap text-base">{item.price}</span>
               </div>
             </div>
           ))}

@@ -33,7 +33,7 @@ export function About() {
           <span className="text-primary font-semibold tracking-widest uppercase text-sm font-sans">
             Conheça-nos
           </span>
-          <h2 className="text-3xl md:text-5xl font-bold text-foreground mt-2 mb-4 text-balance">
+          <h2 className="text-3xl md:text-5xl font-extrabold text-secondary mt-2 mb-4 text-balance">
             A Casa do Sabor em Tubarão
           </h2>
           <div className="w-20 h-1 bg-primary mx-auto" />
@@ -56,7 +56,7 @@ export function About() {
 
           {/* Content */}
           <div>
-            <h3 className="text-2xl md:text-3xl font-bold text-foreground mb-6">
+            <h3 className="text-2xl md:text-3xl font-extrabold text-secondary mb-6">
               O melhor do <span className="text-primary">mar</span> e do <span className="text-primary">bar</span>
             </h3>
             
@@ -82,7 +82,7 @@ export function About() {
                     <feature.icon className="text-primary" size={24} />
                   </div>
                   <div>
-                    <h4 className="font-bold text-foreground mb-1">{feature.title}</h4>
+                    <h4 className="font-extrabold text-secondary mb-1">{feature.title}</h4>
                     <p className="text-foreground/60 text-sm">{feature.description}</p>
                   </div>
                 </div>
