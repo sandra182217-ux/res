@@ -30,11 +30,11 @@ export function Specialties() {
           <span className="text-primary font-semibold tracking-widest uppercase text-sm font-sans">
             Sabores Únicos
           </span>
-          <h2 className="text-4xl md:text-6xl font-bold text-primary-foreground mt-2 mb-4 text-balance font-serif">
+          <h2 className="text-3xl md:text-5xl font-bold text-foreground mt-2 mb-4 text-balance">
             Nossas Especialidades
           </h2>
           <div className="w-20 h-1 bg-primary mx-auto mb-6" />
-          <p className="text-foreground/80 max-w-3xl mx-auto text-lg font-light font-sans">
+          <p className="text-foreground/70 max-w-3xl mx-auto text-base font-normal">
             Pratos preparados com ingredientes frescos e o carinho que faz toda a diferença
           </p>
         </div>
@@ -64,8 +64,8 @@ export function Specialties() {
               
               {/* Content */}
               <div className="p-6">
-                <h3 className="text-xl font-bold text-primary-foreground mb-2 font-serif">{item.name}</h3>
-                <p className="text-foreground/70 font-sans">{item.description}</p>
+                <h3 className="text-lg font-bold text-foreground mb-2">{item.name}</h3>
+                <p className="text-foreground/60 text-sm">{item.description}</p>
               </div>
             </div>
           ))}
@@ -73,10 +73,10 @@ export function Specialties() {
 
         {/* Highlight Box */}
         <div className="mt-16 bg-gradient-to-r from-primary/20 via-primary/10 to-primary/20 rounded-2xl p-8 md:p-12 text-center">
-          <h3 className="text-3xl md:text-4xl font-bold text-primary-foreground mb-4 font-serif">
+          <h3 className="text-2xl md:text-3xl font-bold text-foreground mb-4">
             Tábua Floripa
           </h3>
-          <p className="text-foreground/90 max-w-3xl mx-auto mb-8 text-lg font-sans">
+          <p className="text-foreground max-w-3xl mx-auto mb-8 text-base">
             Nossa especialidade da casa! Camarão à milanesa, isca de tilápia, lula à milanesa, 
             fritas e muito mais em uma tábua completa para compartilhar.
           </p>

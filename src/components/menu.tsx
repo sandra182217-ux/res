@@ -87,11 +87,11 @@ export function Menu() {
           <span className="text-primary font-semibold tracking-widest uppercase text-sm font-sans">
             Delícias
           </span>
-          <h2 className="text-4xl md:text-6xl font-bold text-primary-foreground mt-2 mb-4 text-balance font-serif">
+          <h2 className="text-3xl md:text-5xl font-bold text-foreground mt-2 mb-4 text-balance">
             Nosso Cardápio
           </h2>
           <div className="w-20 h-1 bg-primary mx-auto mb-6" />
-          <p className="text-foreground/80 max-w-3xl mx-auto font-light font-sans">
+          <p className="text-foreground/70 max-w-3xl mx-auto font-normal text-base">
             Conheça nossos pratos preparados com ingredientes frescos e muito sabor
           </p>
         </div>
@@ -123,12 +123,12 @@ export function Menu() {
             >
               <div className="flex justify-between items-start gap-4">
                 <div className="flex-1">
-                  <h3 className="font-bold text-primary-foreground group-hover:text-primary transition-colors font-serif text-lg">
+                  <h3 className="font-bold text-foreground group-hover:text-primary transition-colors text-base">
                     {item.name}
                   </h3>
-                  <p className="text-foreground/70 text-base mt-1 font-sans">{item.description}</p>
+                  <p className="text-foreground/60 text-sm mt-1">{item.description}</p>
                 </div>
-                <span className="text-primary font-bold whitespace-nowrap text-lg font-serif">{item.price}</span>
+                <span className="text-primary font-bold whitespace-nowrap text-base">{item.price}</span>
               </div>
             </div>
           ))}
@@ -136,7 +136,7 @@ export function Menu() {
 
         {/* CTA */}
         <div className="text-center mt-12">
-          <p className="text-foreground/80 mb-6 text-lg font-sans">
+          <p className="text-foreground/70 mb-6 text-base">
             Quer ver o cardápio completo ou fazer um pedido?
           </p>
           <a

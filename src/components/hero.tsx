@@ -13,7 +13,7 @@ export function Hero() {
           className="object-cover"
           priority
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-background/80 via-background/60 to-background" />
+        <div className="absolute inset-0 bg-gradient-to-b from-white/80 via-white/60 to-white" />
       </div>
 
       {/* Content */}
@@ -30,13 +30,13 @@ export function Hero() {
           />
         </div>
         
-        <p className="text-2xl md:text-4xl text-primary-foreground mb-4 font-serif font-bold tracking-tight">
+        <p className="text-3xl md:text-5xl text-secondary font-bold tracking-tight mb-6">
           Bar, Restaurante e Frutos do Mar
         </p>
         
-        <div className="w-24 h-1 bg-primary mx-auto my-6" />
+        <div className="w-32 h-1.5 bg-primary mx-auto my-8 rounded-full" />
         
-        <p className="text-lg md:text-xl text-foreground/90 max-w-3xl mx-auto mb-12 leading-relaxed">
+        <p className="text-lg md:text-xl text-foreground max-w-3xl mx-auto mb-12 leading-relaxed font-normal">
           O sabor do mar na sua mesa. Camarão, tilápia, drinks gelados e o melhor 
           ambiente de Tubarão para curtir com amigos e família.
         </p>

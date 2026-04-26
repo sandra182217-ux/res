@@ -42,11 +42,11 @@ export function DailyOffers() {
           <span className="text-primary font-semibold tracking-widest uppercase text-sm font-sans">
             Promoções
           </span>
-          <h2 className="text-4xl md:text-6xl font-bold text-primary-foreground mt-2 mb-4 font-serif">
+          <h2 className="text-3xl md:text-5xl font-bold text-foreground mt-2 mb-4">
             Ofertas do Dia
           </h2>
           <div className="w-20 h-1 bg-primary mx-auto mb-6" />
-          <p className="text-foreground/80 max-w-3xl mx-auto font-light font-sans">
+          <p className="text-foreground/70 max-w-3xl mx-auto font-normal text-base">
             Aproveite nossas promoções especiais de cada dia da semana
           </p>
         </div>
@@ -77,10 +77,10 @@ export function DailyOffers() {
 
               {/* Content */}
               <div className="p-6">
-                <h3 className="text-xl font-bold text-primary-foreground mb-2 group-hover:text-primary transition-colors font-serif">
+                <h3 className="text-lg font-bold text-foreground mb-2 group-hover:text-primary transition-colors">
                   {offer.name}
                 </h3>
-                <p className="text-foreground/70 text-base mb-4 line-clamp-2 font-sans">
+                <p className="text-foreground/60 text-sm mb-4 line-clamp-2">
                   {offer.description}
                 </p>
 
@@ -89,7 +89,7 @@ export function DailyOffers() {
                   <span className="text-foreground/50 line-through text-base font-sans">
                     R$ {offer.originalPrice.toFixed(2).replace(".", ",")}
                   </span>
-                  <span className="text-2xl font-bold text-primary font-serif">
+                  <span className="text-2xl font-bold text-primary">
                     R$ {offer.price.toFixed(2).replace(".", ",")}
                   </span>
                 </div>

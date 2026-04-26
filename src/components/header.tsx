@@ -42,7 +42,7 @@ export function Header() {
               height={60}
               className="rounded-full"
             />
-            <span className="text-xl font-bold text-primary-foreground hidden sm:block">
+            <span className="text-lg font-bold text-foreground hidden sm:block">
               Floripa Bar
             </span>
           </Link>
@@ -53,7 +53,7 @@ export function Header() {
               <Link
                 key={link.href}
                 href={link.href}
-                className="text-foreground/90 hover:text-primary transition-colors font-semibold tracking-wide text-lg"
+                className="text-foreground hover:text-primary transition-colors font-medium text-base"
               >
                 {link.label}
               </Link>

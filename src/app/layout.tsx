@@ -1,18 +1,12 @@
 import type { Metadata } from 'next'
-import { Playfair_Display, Lato } from 'next/font/google'
+import { Inter } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
 import './globals.css'
 
-const playfair = Playfair_Display({ 
+const inter = Inter({ 
   subsets: ["latin"],
-  variable: '--font-playfair',
-  display: 'swap',
-})
-
-const lato = Lato({ 
-  subsets: ["latin"],
-  weight: ['300', '400', '700'],
-  variable: '--font-lato',
+  weight: ['300', '400', '500', '600', '700', '800'],
+  variable: '--font-inter',
   display: 'swap',
 })
 
@@ -39,7 +33,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-BR" className="bg-background">
-      <body className={`${playfair.variable} ${lato.variable} font-sans antialiased`}>
+      <body className={`${inter.variable} font-sans antialiased`}>
         {children}
         {process.env.NODE_ENV === 'production' && <Analytics />}
       </body>
