@@ -27,14 +27,14 @@ export function Specialties() {
       <div className="container mx-auto px-4">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <span className="text-primary font-medium tracking-widest uppercase text-sm">
+          <span className="text-primary font-semibold tracking-widest uppercase text-sm font-sans">
             Sabores Únicos
           </span>
-          <h2 className="text-3xl md:text-5xl font-bold text-foreground mt-2 mb-4 text-balance">
+          <h2 className="text-4xl md:text-6xl font-bold text-primary-foreground mt-2 mb-4 text-balance font-serif">
             Nossas Especialidades
           </h2>
           <div className="w-20 h-1 bg-primary mx-auto mb-6" />
-          <p className="text-foreground/60 max-w-2xl mx-auto text-lg">
+          <p className="text-foreground/80 max-w-3xl mx-auto text-lg font-light font-sans">
             Pratos preparados com ingredientes frescos e o carinho que faz toda a diferença
           </p>
         </div>
@@ -44,7 +44,7 @@ export function Specialties() {
           {specialties.map((item, index) => (
             <div 
               key={index} 
-              className="group bg-card rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2"
+              className="group bg-card rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2"
             >
               {/* Image */}
               <div className="relative h-64 overflow-hidden">
@@ -56,7 +56,7 @@ export function Specialties() {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent" />
                 <div className="absolute bottom-4 left-4 right-4">
-                  <span className="inline-block bg-primary text-primary-foreground px-4 py-1 rounded-full text-sm font-semibold">
+                  <span className="inline-block bg-primary text-primary-foreground px-4 py-1.5 rounded-full text-sm font-semibold shadow-md">
                     {item.price}
                   </span>
                 </div>
@@ -64,8 +64,8 @@ export function Specialties() {
               
               {/* Content */}
               <div className="p-6">
-                <h3 className="text-xl font-bold text-foreground mb-2">{item.name}</h3>
-                <p className="text-foreground/60">{item.description}</p>
+                <h3 className="text-xl font-bold text-primary-foreground mb-2 font-serif">{item.name}</h3>
+                <p className="text-foreground/70 font-sans">{item.description}</p>
               </div>
             </div>
           ))}
@@ -73,10 +73,10 @@ export function Specialties() {
 
         {/* Highlight Box */}
         <div className="mt-16 bg-gradient-to-r from-primary/20 via-primary/10 to-primary/20 rounded-2xl p-8 md:p-12 text-center">
-          <h3 className="text-2xl md:text-3xl font-bold text-foreground mb-4">
+          <h3 className="text-3xl md:text-4xl font-bold text-primary-foreground mb-4 font-serif">
             Tábua Floripa
           </h3>
-          <p className="text-foreground/70 max-w-2xl mx-auto mb-6 text-lg">
+          <p className="text-foreground/90 max-w-3xl mx-auto mb-8 text-lg font-sans">
             Nossa especialidade da casa! Camarão à milanesa, isca de tilápia, lula à milanesa, 
             fritas e muito mais em uma tábua completa para compartilhar.
           </p>
@@ -86,7 +86,7 @@ export function Specialties() {
               href="https://wa.me/5548936224040?text=Olá! Gostaria de fazer um pedido da Tábua Floripa"
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-primary text-primary-foreground px-6 py-3 rounded-full font-semibold hover:bg-primary/90 transition-all"
+              className="bg-primary text-primary-foreground px-8 py-4 rounded-full font-bold hover:bg-primary/90 transition-all shadow-lg"
             >
               Pedir Agora
             </a>

@@ -36,13 +36,13 @@ export function Header() {
           {/* Logo */}
           <Link href="#inicio" className="flex items-center gap-3">
             <Image
-              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/ChatGPT%20Image%2026%20de%20abr.%20de%202026%2C%2013_33_41-S9ArCs6N0Ofl6wrEWgdteIDB75nCBh.png"
+              src="/images/floripa-bar-logo.png"
               alt="Floripa Bar"
               width={60}
               height={60}
               className="rounded-full"
             />
-            <span className="text-xl font-bold text-primary hidden sm:block">
+            <span className="text-xl font-bold text-primary-foreground hidden sm:block">
               Floripa Bar
             </span>
           </Link>
@@ -53,7 +53,7 @@ export function Header() {
               <Link
                 key={link.href}
                 href={link.href}
-                className="text-foreground/80 hover:text-primary transition-colors font-medium tracking-wide"
+                className="text-foreground/90 hover:text-primary transition-colors font-semibold tracking-wide text-lg"
               >
                 {link.label}
               </Link>
@@ -66,7 +66,7 @@ export function Header() {
               href="https://wa.me/5548936224040"
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-primary text-primary-foreground px-6 py-2.5 rounded-full font-semibold hover:bg-primary/90 transition-all hover:scale-105"
+              className="bg-primary text-primary-foreground px-8 py-3 rounded-full font-bold hover:bg-primary/90 transition-all hover:scale-105 shadow-md"
             >
               Fazer Pedido
             </a>
@@ -91,7 +91,7 @@ export function Header() {
                   key={link.href}
                   href={link.href}
                   onClick={() => setIsMenuOpen(false)}
-                  className="text-foreground/80 hover:text-primary transition-colors font-medium py-2"
+                  className="text-foreground/90 hover:text-primary transition-colors font-semibold py-3 text-lg"
                 >
                   {link.label}
                 </Link>
@@ -100,7 +100,7 @@ export function Header() {
                 href="https://wa.me/5548936224040"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-primary text-primary-foreground px-6 py-3 rounded-full font-semibold text-center mt-4 hover:bg-primary/90 transition-all"
+                className="bg-primary text-primary-foreground px-8 py-4 rounded-full font-bold text-center mt-4 hover:bg-primary/90 transition-all shadow-md"
               >
                 Fazer Pedido
               </a>
