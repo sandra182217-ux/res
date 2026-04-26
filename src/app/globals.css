@@ -5,9 +5,9 @@
 
 :root {
   /* Floripa Bar - Wine/Burgundy and Gold theme matching logo */
-  --background: oklch(0.98 0.01 0);
+  --background: oklch(0.96 0.02 70);
   --foreground: oklch(0.15 0.02 20);
-  --card: oklch(0.96 0.01 0);
+  --card: oklch(0.94 0.02 70);
   --card-foreground: oklch(0.15 0.02 20);
   --popover: oklch(0.96 0.01 0);
   --popover-foreground: oklch(0.15 0.02 20);
@@ -21,8 +21,8 @@
   --accent-foreground: oklch(0.98 0.01 0);
   --destructive: oklch(0.577 0.245 27.325);
   --destructive-foreground: oklch(0.577 0.245 27.325);
-  --border: oklch(0.90 0.01 0);
-  --input: oklch(0.92 0.01 0);
+  --border: oklch(0.88 0.02 70);
+  --input: oklch(0.90 0.02 70);
   --ring: oklch(0.75 0.18 70);
   --chart-1: oklch(0.75 0.18 70);
   --chart-2: oklch(0.6 0.118 184.704);
@@ -48,9 +48,9 @@
 }
 
 .dark {
-  --background: oklch(0.98 0.01 0);
+  --background: oklch(0.96 0.02 70);
   --foreground: oklch(0.15 0.02 20);
-  --card: oklch(0.96 0.01 0);
+  --card: oklch(0.94 0.02 70);
   --card-foreground: oklch(0.15 0.02 20);
   --popover: oklch(0.96 0.01 0);
   --popover-foreground: oklch(0.15 0.02 20);
@@ -64,8 +64,8 @@
   --accent-foreground: oklch(0.98 0.01 0);
   --destructive: oklch(0.396 0.141 25.723);
   --destructive-foreground: oklch(0.637 0.237 25.331);
-  --border: oklch(0.90 0.01 0);
-  --input: oklch(0.92 0.01 0);
+  --border: oklch(0.88 0.02 70);
+  --input: oklch(0.90 0.02 70);
   --ring: oklch(0.75 0.18 70);
   --chart-1: oklch(0.75 0.18 70);
   --chart-2: oklch(0.696 0.17 162.48);

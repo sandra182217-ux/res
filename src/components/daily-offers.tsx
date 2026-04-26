@@ -35,7 +35,7 @@ const offers = [
 
 export function DailyOffers() {
   return (
-    <section id="ofertas" className="py-20 bg-background/80">
+    <section id="ofertas" className="py-20 bg-secondary/5">
       <div className="container mx-auto px-4">
         {/* Header */}
         <div className="text-center mb-12">

@@ -26,7 +26,7 @@ const features = [
 
 export function About() {
   return (
-    <section id="sobre" className="py-20 lg:py-32 bg-background/80">
+    <section id="sobre" className="py-20 lg:py-32 bg-white/50">
       <div className="container mx-auto px-4">
         {/* Section Header */}
         <div className="text-center mb-16">
