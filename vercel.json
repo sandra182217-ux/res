@@ -3,5 +3,3 @@
   "buildCommand": "pnpm build",
   "outputDirectory": ".next"
 }
-
-// Forcing production redeploy to fix 404 on main domain
