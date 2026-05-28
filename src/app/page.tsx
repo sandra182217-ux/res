@@ -1,5 +1,6 @@
 import { Header } from "@/components/header"
 import { Hero } from "@/components/hero"
+import { FeaturedOffer } from "@/components/featured-offer"
 import { DailyOffers } from "@/components/daily-offers"
 import { About } from "@/components/about"
 import { Specialties } from "@/components/specialties"
@@ -13,6 +14,7 @@ export default function Home() {
     <main className="min-h-screen">
       <Header />
       <Hero />
+      <FeaturedOffer />
       <DailyOffers />
       <About />
       <Specialties />
