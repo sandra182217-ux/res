@@ -5,9 +5,9 @@
 
 :root {
   /* Floripa Bar - Wine/Burgundy and Gold theme matching logo */
-  --background: oklch(0.96 0.02 70);
+  --background: oklch(0.98 0.015 70);
   --foreground: oklch(0.15 0.02 20);
-  --card: oklch(0.94 0.02 70);
+  --card: oklch(0.96 0.02 70);
   --card-foreground: oklch(0.15 0.02 20);
   --popover: oklch(0.96 0.01 0);
   --popover-foreground: oklch(0.15 0.02 20);
@@ -48,9 +48,9 @@
 }
 
 .dark {
-  --background: oklch(0.96 0.02 70);
+  --background: oklch(0.98 0.015 70);
   --foreground: oklch(0.15 0.02 20);
-  --card: oklch(0.94 0.02 70);
+  --card: oklch(0.96 0.02 70);
   --card-foreground: oklch(0.15 0.02 20);
   --popover: oklch(0.96 0.01 0);
   --popover-foreground: oklch(0.15 0.02 20);
