@@ -26,23 +26,23 @@ const features = [
 
 export function About() {
   return (
-    <section id="sobre" className="py-20 lg:py-32 bg-white/50">
+    <section id="sobre" className="py-12 lg:py-20 bg-background">
       <div className="container mx-auto px-4">
         {/* Section Header */}
-        <div className="text-center mb-16">
+        <div className="text-center mb-10">
           <span className="text-primary font-semibold tracking-widest uppercase text-sm font-sans">
             Conheça-nos
           </span>
-          <h2 className="text-3xl md:text-5xl font-extrabold text-secondary mt-2 mb-4 text-balance">
+          <h2 className="text-2xl md:text-4xl font-extrabold text-secondary mt-2 mb-3 text-balance">
             A Casa do Sabor em Tubarão
           </h2>
-          <div className="w-20 h-1 bg-primary mx-auto" />
+          <div className="w-16 h-1 bg-primary mx-auto" />
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
+        <div className="grid lg:grid-cols-2 gap-8 items-center">
           {/* Image */}
           <div className="relative">
-            <div className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl">
+            <div className="relative aspect-[4/3] rounded-xl overflow-hidden shadow-xl">
               <Image
                 src="/images/ambiente.jpg"
                 alt="Ambiente do Floripa Bar"
@@ -51,23 +51,23 @@ export function About() {
               />
             </div>
             {/* Decorative element */}
-            <div className="absolute -bottom-6 -right-6 w-32 h-32 border-4 border-primary rounded-2xl -z-10" />
+            <div className="absolute -bottom-4 -right-4 w-24 h-24 border-4 border-primary rounded-xl -z-10" />
           </div>
 
           {/* Content */}
           <div>
-            <h3 className="text-2xl md:text-3xl font-extrabold text-secondary mb-6">
+            <h3 className="text-xl md:text-2xl font-extrabold text-secondary mb-4">
               O melhor do <span className="text-primary">mar</span> e do <span className="text-primary">bar</span>
             </h3>
             
-            <p className="text-foreground text-base leading-relaxed mb-6">
+            <p className="text-foreground text-sm leading-relaxed mb-4">
               O Floripa Bar é o lugar perfeito para quem busca frutos do mar frescos 
               e saborosos, combinados com um bar completo e ambiente descontraído. 
               Localizado em Tubarão, SC, somos referência em camarão à milanesa, 
               tilápia e nossa famosa Tábua Floripa.
             </p>
             
-            <p className="text-foreground text-base leading-relaxed mb-8">
+            <p className="text-foreground text-sm leading-relaxed mb-6">
               Venha conhecer nosso espaço aconchegante, ideal para reunir a família, 
               encontrar os amigos ou simplesmente relaxar com uma cerveja gelada e 
               petiscos deliciosos. De quarta a domingo, a partir das 18h, estamos 
@@ -75,15 +75,15 @@ export function About() {
             </p>
 
             {/* Features Grid */}
-            <div className="grid sm:grid-cols-2 gap-6">
+            <div className="grid sm:grid-cols-2 gap-4">
               {features.map((feature, index) => (
-                <div key={index} className="flex items-start gap-4">
-                  <div className="w-12 h-12 rounded-full bg-primary/20 flex items-center justify-center flex-shrink-0">
-                    <feature.icon className="text-primary" size={24} />
+                <div key={index} className="flex items-start gap-3">
+                  <div className="w-10 h-10 rounded-full bg-primary/20 flex items-center justify-center flex-shrink-0">
+                    <feature.icon className="text-primary" size={20} />
                   </div>
                   <div>
-                    <h4 className="font-extrabold text-secondary mb-1">{feature.title}</h4>
-                    <p className="text-foreground/60 text-sm">{feature.description}</p>
+                    <h4 className="font-extrabold text-secondary text-sm mb-0.5">{feature.title}</h4>
+                    <p className="text-foreground/70 text-xs leading-relaxed">{feature.description}</p>
                   </div>
                 </div>
               ))}
