@@ -1,14 +1,6 @@
 import { MapPin, Phone, Clock, Instagram } from "lucide-react"
-
-const schedules = [
-  { day: "Segunda-feira", hours: "Fechado" },
-  { day: "Terça-feira", hours: "Fechado" },
-  { day: "Quarta-feira", hours: "18:00 - 00:00" },
-  { day: "Quinta-feira", hours: "18:00 - 00:00" },
-  { day: "Sexta-feira", hours: "18:00 - 00:00" },
-  { day: "Sábado", hours: "18:00 - 00:00" },
-  { day: "Domingo", hours: "18:00 - 00:00" },
-]
+import { ContactForm } from "./contact-form"
+import { RESTAURANT_CONFIG } from "@/lib/config"
 
 export function Contact() {
   return (
@@ -25,9 +17,9 @@ export function Contact() {
           <div className="w-20 h-1 bg-primary mx-auto" />
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-12">
+        <div className="grid lg:grid-cols-3 gap-12">
           {/* Contact Info */}
-          <div className="space-y-8">
+          <div className="space-y-8 lg:col-span-2">
             {/* Address */}
             <div className="flex items-start gap-4">
               <div className="w-14 h-14 rounded-full bg-primary/20 flex items-center justify-center flex-shrink-0">
@@ -36,12 +28,12 @@ export function Contact() {
               <div>
                 <h3 className="text-lg font-extrabold text-secondary mb-2">Endereço</h3>
                 <p className="text-foreground text-sm">
-                  Av. Pedro Zapelini, 1120<br />
-                  Santo Antônio de Pádua<br />
-                  Tubarão - SC, 88701-481
+                  {RESTAURANT_CONFIG.address.street}<br />
+                  {RESTAURANT_CONFIG.address.neighborhood}<br />
+                  {RESTAURANT_CONFIG.address.city} - {RESTAURANT_CONFIG.address.state}, {RESTAURANT_CONFIG.address.zipCode}
                 </p>
                 <a
-                  href="https://maps.google.com/?q=Av.+Pedro+Zapelini,+1120+-+Santo+Antônio+de+Pádua,+Tubarão+-+SC,+88701-481"
+                  href={RESTAURANT_CONFIG.social.googleMaps.url}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 text-primary hover:underline mt-2"
@@ -62,14 +54,14 @@ export function Contact() {
               <div>
                 <h3 className="text-lg font-extrabold text-secondary mb-2">Telefone / WhatsApp</h3>
                 <a
-                  href="tel:+5548936224040"
+                  href={`tel:${RESTAURANT_CONFIG.phone.tel}`}
                   className="text-foreground hover:text-primary transition-colors text-base"
                 >
-                  (48) 3622-4040
+                  {RESTAURANT_CONFIG.phone.display}
                 </a>
                 <div className="mt-3">
                   <a
-                    href="https://wa.me/5548936224040"
+                    href={RESTAURANT_CONFIG.social.whatsapp.url}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-2 bg-green-600 text-white px-5 py-2.5 rounded-full text-base font-bold hover:bg-green-700 transition-colors shadow-md"
@@ -91,12 +83,12 @@ export function Contact() {
               <div>
                 <h3 className="text-lg font-extrabold text-secondary mb-2">Instagram</h3>
                 <a
-                  href="https://www.instagram.com/floripa.bar"
+                  href={RESTAURANT_CONFIG.social.instagram.url}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-foreground text-sm hover:text-primary transition-colors"
                 >
-                  @floripa.bar
+                  {RESTAURANT_CONFIG.social.instagram.handle}
                 </a>
               </div>
             </div>
@@ -109,7 +101,7 @@ export function Contact() {
               <div className="flex-1">
                 <h3 className="text-lg font-extrabold text-secondary mb-4">Horário de Funcionamento</h3>
                 <div className="space-y-2">
-                  {schedules.map((schedule, index) => (
+                  {RESTAURANT_CONFIG.schedule.map((schedule, index) => (
                     <div 
                       key={index} 
                       className={`flex justify-between py-2 border-b border-border/30 ${
@@ -127,20 +119,29 @@ export function Contact() {
             </div>
           </div>
 
-          {/* Map */}
-          <div className="relative">
-            <div className="bg-card rounded-2xl overflow-hidden shadow-xl h-full min-h-[400px]">
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3521.1234567890123!2d-49.0123456!3d-28.4567890!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sAv.+Pedro+Zapelini%2C+1120+-+Santo+Ant%C3%B4nio+de+P%C3%A1dua%2C+Tubar%C3%A3o+-+SC!5e0!3m2!1spt-BR!2sbr!4v1234567890123"
-                width="100%"
-                height="100%"
-                style={{ border: 0, minHeight: "400px" }}
-                allowFullScreen
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-                title="Localização Floripa Bar"
-              />
-            </div>
+          {/* Contact Form */}
+          <div className="bg-card rounded-2xl shadow-xl p-8 h-fit sticky top-6">
+            <h3 className="text-2xl font-extrabold text-secondary mb-6">Envie uma Mensagem</h3>
+            <ContactForm />
+          </div>
+        </div>
+
+        {/* Map Section */}
+        <div className="mt-16">
+          <div className="text-center mb-8">
+            <h3 className="text-2xl font-extrabold text-secondary mb-4">Visite-nos no Mapa</h3>
+          </div>
+          <div className="relative rounded-2xl overflow-hidden shadow-xl h-[400px]">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3521.1234567890123!2d-49.0123456!3d-28.4567890!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sAv.+Pedro+Zapelini%2C+1120+-+Santo+Ant%C3%B4nio+de+P%C3%A1dua%2C+Tubar%C3%A3o+-+SC!5e0!3m2!1spt-BR!2sbr!4v1234567890123"
+              width="100%"
+              height="100%"
+              style={{ border: 0 }}
+              allowFullScreen
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              title={`Localização ${RESTAURANT_CONFIG.name}`}
+            />
           </div>
         </div>
       </div>

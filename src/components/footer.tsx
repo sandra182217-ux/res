@@ -1,4 +1,5 @@
 import { Instagram, Phone, MapPin } from "lucide-react"
+import { RESTAURANT_CONFIG } from "@/lib/config"
 
 export function Footer() {
   const currentYear = new Date().getFullYear()
@@ -9,10 +10,10 @@ export function Footer() {
         <div className="grid md:grid-cols-3 gap-8 items-center">
           {/* Logo & Description */}
           <div className="text-center md:text-left">
-            <h4 className="text-xl font-bold text-primary mb-4">Floripa Bar</h4>
+            <h4 className="text-xl font-bold text-primary mb-4">{RESTAURANT_CONFIG.name}</h4>
             <p className="text-foreground/60 text-sm">
-              Bar, Restaurante e Frutos do Mar<br />
-              O melhor sabor de Tubarão, SC
+              {RESTAURANT_CONFIG.tagline}<br />
+              {RESTAURANT_CONFIG.description}
             </p>
           </div>
 
@@ -40,7 +41,7 @@ export function Footer() {
             <h4 className="text-foreground font-semibold mb-4">Siga-nos</h4>
             <div className="flex justify-center md:justify-end gap-4 mb-4">
               <a
-                href="https://www.instagram.com/floripa.bar"
+                href={RESTAURANT_CONFIG.social.instagram.url}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 rounded-full bg-primary/20 flex items-center justify-center hover:bg-primary/40 transition-colors"
@@ -49,7 +50,7 @@ export function Footer() {
                 <Instagram className="text-primary" size={20} />
               </a>
               <a
-                href="https://wa.me/5548936224040"
+                href={RESTAURANT_CONFIG.social.whatsapp.url}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 rounded-full bg-primary/20 flex items-center justify-center hover:bg-primary/40 transition-colors"
@@ -58,7 +59,7 @@ export function Footer() {
                 <Phone className="text-primary" size={20} />
               </a>
               <a
-                href="https://maps.google.com/?q=Av.+Pedro+Zapelini,+1120+-+Santo+Antônio+de+Pádua,+Tubarão+-+SC"
+                href={RESTAURANT_CONFIG.social.googleMaps.url}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 rounded-full bg-primary/20 flex items-center justify-center hover:bg-primary/40 transition-colors"
@@ -68,7 +69,7 @@ export function Footer() {
               </a>
             </div>
             <p className="text-foreground/50 text-sm">
-              (48) 3622-4040
+              {RESTAURANT_CONFIG.phone.display}
             </p>
           </div>
         </div>
@@ -76,7 +77,7 @@ export function Footer() {
         {/* Divider */}
         <div className="border-t border-border/30 mt-8 pt-8">
           <p className="text-center text-foreground/40 text-sm">
-            &copy; {currentYear} Floripa Bar. Todos os direitos reservados.
+            &copy; {currentYear} {RESTAURANT_CONFIG.name}. Todos os direitos reservados.
           </p>
         </div>
       </div>
